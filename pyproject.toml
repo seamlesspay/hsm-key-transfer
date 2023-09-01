@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hsm-key-transfer"
+version = "0.1.0"
+description = ""
+authors = ["Jared Wyatt <j@wyatt.co>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+transfer = "hsm_key_transfer:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.28.36"
+requests-pkcs12 = "^1.18"
+ownca = "^0.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
